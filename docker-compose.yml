@@ -1,0 +1,10 @@
+app:
+  image: your_name_here
+  environment:
+    - DB_URL
+  links:
+    - db
+db:
+  image: convox/postgres
+  ports:
+    - "5432"
